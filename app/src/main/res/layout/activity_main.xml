@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:inputType="textPersonName"
-           android:hint="Search-> Write cats " />
+           android:hint="Search" />
 
         <Button
             android:backgroundTint="#C51162"
