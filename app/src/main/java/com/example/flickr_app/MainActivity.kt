@@ -86,8 +86,7 @@ class MainActivity : AppCompatActivity() {
     private fun getPhotos() :String{
      var response =""
         try {
- response=URL("https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=afbcd646fa114c3489c633fc98b19c1f&tags=" +
-                    "${etSearch.text}&format=json&nojsoncallback=1")                
+  response = URL("https://api.flickr.com/services/rest/?method=flickr.photos.search&per_page=10&api_key=cb0cbca5c50568f7e3189b08d8e6a89b&tags=${etSearch.text}&format=json&nojsoncallback=1")
                 .readText(Charsets.UTF_8)
         }catch (e:Exception){
             println("ERR : $e")
